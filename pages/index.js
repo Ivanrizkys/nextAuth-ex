@@ -6,9 +6,9 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   const { data: session, status } = useSession();
-  console.log(session)
 
   if (status === "loading") return null;
+  console.log(process.env.GOOGLE_ID)
 
   return (
     <div>
